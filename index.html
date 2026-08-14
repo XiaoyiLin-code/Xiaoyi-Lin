@@ -12,13 +12,31 @@
 <link rel="stylesheet" href="jemdoc.css" type="text/css">
 <title>Xiaoyi Lin@WHU</title>
 <style>
-    .smaller-image {
-      width: 20%;
-    }
-    tr.internship-entry + tr.internship-entry td {
-      padding-top: 28px;
-    }
-</style>
+	    .smaller-image {
+	      width: 20%;
+	    }
+	    tr.internship-entry + tr.internship-entry td {
+	      padding-top: 28px;
+	    }
+	    .logo-card {
+	      width: 220px;
+	      height: 110px;
+	      display: flex;
+	      align-items: center;
+	      justify-content: center;
+	    }
+	    .logo-card img {
+	      max-width: 250px;
+	      max-height: 122px;
+	      object-fit: contain;
+	    }
+	    .project-teaser-video {
+	      width: 285px;
+	      display: block;
+	      box-shadow: 4px 4px 8px #888;
+	      background-color: #000;
+	    }
+	</style>
 
 
 </head>
@@ -216,12 +234,25 @@
 </tbody></table>
 
 
-<h2>Internship Experience</h2>
-<table id="tbPublications" width="100%">
-	<tbody>
-	<tr class="internship-entry">
-		<td width="306">
-			<img src="./pic/NR.jpg" width="160px" alt="Noitom Robotics logo">
+	<h2>Internship Experience</h2>
+	<table id="tbPublications" width="100%">
+		<tbody>
+		<tr class="internship-entry">
+			<td width="306">
+				<div class="logo-card">
+					<img src="./pic/brainco_logo.png" alt="BrainCo logo">
+				</div>
+			</td>
+			<td>
+				<p><b>BrainCo</b></p>
+				<p>Research Intern</p>
+				<p>Jun. 2026 - Present</p>
+				<p>Current research appointment.</p>
+			</td>
+		</tr>
+		<tr class="internship-entry">
+			<td width="306">
+				<img src="./pic/NR.jpg" width="160px" alt="Noitom Robotics logo">
 		</td>
 		<td>
 			<p><b>Noitom Robotics</b></p>
@@ -266,28 +297,37 @@
 			<p></p>
 		</td> -->
 
-		<!-- ------------------------ -->
-		<!-- <td><b>/*Under Review & Recent Submissions*/</b> -->
-		<p></p>
-		</td>
-		<!--########################-->
-		<!-- <tr>
-			<td width="306">
-			<img src="./pub/2026_omnicontact.gif" width="285px" alt="OmniContact humanoid loco-manipulation demo" style="box-shadow: 4px 4px 8px #888">
+			<!-- ------------------------ -->
+			<!-- <td><b>/*Under Review & Recent Submissions*/</b> -->
+			<p></p>
 			</td>
-			<td>
-			<p><b>Generalizable Humanoid Loco-Manipulation via Contact-Flow Skill Chaining</b></p>
-			<em>Submitted to CoRL 2026</em>
-			<p><b>Xiaoyi Lin*</b> (co-first author, second author)</p>
-			</td>
-		</tr>
-		<tr>&nbsp</tr>
-		<tr>&nbsp</tr>
-		<tr>&nbsp</tr>
-		<tr>&nbsp</tr>
-		<tr>&nbsp</tr> -->
-		<!--########################-->
-		<tr>
+				<!--########################-->
+				<tr>
+					<td width="306">
+					<video class="project-teaser-video" autoplay muted loop playsinline preload="metadata" poster="./pub/2026_omnicontact_teaser.jpg" aria-label="OmniContact humanoid loco-manipulation demo">
+						<source src="./video/noitom_rt100.mp4" type="video/mp4">
+					</video>
+					</td>
+					<td>
+				<p><b>OmniContact: Chaining Meta-Skills via Contact Flow for Generalizable Humanoid Loco-Manipulation</b></p>
+				<em>Preprint arXiv</em>
+				<p>Runyi Yu*, <b>Xiaoyi Lin*</b>, Ji Ma, Yinhuai Wang, Koukou Luo, Jiahao Ji, Huayi Wang, Wenjia Wang, Runhan Zhang, Ping Tan, Ting Wu, Ruoli Dai, Qifeng Chen, Lei Han</p>
+				<p>
+					[<a href="https://arxiv.org/abs/2606.26201">arXiv</a>]
+					[<a href="https://omnicontact.github.io/">project page</a>]
+					[<a href="https://github.com/Ingrid789/OmniContact_sim2sim">code</a>]
+					[<a href="https://huggingface.co/datasets/lightcone02/OmniContact-Dataset">dataset</a>]
+					[<a href="https://omnicontact.github.io/policy-viewer.html?v=policy-hide-push-ghostbox-20260604a">live demo</a>]
+				</p>
+				</td>
+			</tr>
+			<tr>&nbsp</tr>
+			<tr>&nbsp</tr>
+			<tr>&nbsp</tr>
+			<tr>&nbsp</tr>
+			<tr>&nbsp</tr>
+			<!--########################-->
+			<tr>
 			<td width="306">
 			<img src="./pub/2026_dexformer.png" width="285px" style="box-shadow: 4px 4px 8px #888" alt="DexFormer Demo">
 			</td>
